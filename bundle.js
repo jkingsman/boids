@@ -14,9 +14,9 @@ var attractors = [[
 var canvas = document.createElement('canvas')
   , ctx = canvas.getContext('2d')
   , boids = Boids({
-      boids: 150
-    , speedLimit: 2
-    , accelerationLimit: 0.5
+      boids: 500
+    , speedLimit: .1
+    , accelerationLimit: 0.1
     , attractors: attractors
   })
 
