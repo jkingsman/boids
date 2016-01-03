@@ -15,7 +15,7 @@ var canvas = document.createElement('canvas')
   , ctx = canvas.getContext('2d')
   , boids = Boids({
       boids: 500
-    , speedLimit: .1
+    , speedLimit: .10
     , accelerationLimit: 0.1
     , attractors: attractors
   })
@@ -643,7 +643,7 @@ function raf(el) {
   function iter(timestamp) {
     var _now = raf.now()
       , dt = _now - now
-    
+
     now = _now
 
     ee.emit('data', dt)
